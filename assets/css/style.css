@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+  --silver: #f5f7ff;
+  --shadow: -10px -10px 15px rgba(255,255,255,0.55),
+    10px 10px 15px rgba(70,70,70,0.12);
+  --poppins: 'Poppins';
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background: var(--silver);
+}
+
+.container {
+  position: relative;
+  width: 60%;
+  overflow: hidden;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.wrapper .form {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.wrapper .form .input {
+  position: relative;
+  width: 95%;
+  border: none;
+  outline: none;
+  text-align: right;
+  background: transparent !important;
+  font-weight: bold;
+}
+
+.wrapper .form .input-number {
+  height: 30px;
+  font-size: 25px;
+}
+
+.wrapper .form .input-result {
+  height: 70px;
+  font-size: 50px;
+}
+
+.wrapper .buttons {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.wrapper .buttons .button,
+.wrapper .buttons #button {
+  position: relative;
+  width: 23%;
+  height: 55px;
+  margin: 5px auto;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: var(--poppins);
+  letter-spacing: 0.2px;
+  background: white;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.wrapper .buttons .button:nth-child(17) {
+  width: 48%;
+}
+
+.wrapper .buttons #button:last-child {
+  background: royalblue;
+  color: #fff;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 768px) {
+  
+  .container {
+    width: 95%;
+  }
+  
+}
