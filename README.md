@@ -1,6 +1,6 @@
 # kalkulator
 
-* source code ini dibuat dengan berikut :
+* source code ini dibuat dengan :
 
   * HTML
   * CSS
